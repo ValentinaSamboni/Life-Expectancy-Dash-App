@@ -1,5 +1,5 @@
 import pandas as pd
-import dash
+from dash import Dash
 from dash import html as html
 from dash import dcc as dcc
 from dash.dependencies import Input, Output
@@ -9,7 +9,7 @@ import plotly.express as px
 life_expec = pd.read_csv("life_expectancy.csv")
 
 
-app = dash.Dash(__name__)
+app = Dash(__name__)
 server = app.server
 
 app.layout = html.Div(children=[
