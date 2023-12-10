@@ -9,7 +9,7 @@ import plotly.express as px
 life_expec = pd.read_csv("life_expectancy.csv")
 
 
-app = dash.Dash()
+app = dash.Dash(__name__)
 server = app.server
 
 app.layout = html.Div(children=[
