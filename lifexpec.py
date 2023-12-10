@@ -10,6 +10,7 @@ life_expec = pd.read_csv("life_expectancy.csv")
 
 
 app = dash.Dash()
+server = app.server
 
 app.layout = html.Div(children=[
     html.H1(children='Life Expectancy'),
