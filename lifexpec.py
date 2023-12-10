@@ -4,6 +4,7 @@ from dash import html as html
 from dash import dcc as dcc
 from dash.dependencies import Input, Output
 import plotly.express as px
+from flask import Flask
 
 
 life_expec = pd.read_csv("life_expectancy.csv")
